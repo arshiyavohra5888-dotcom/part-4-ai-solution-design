@@ -132,3 +132,32 @@ This is primarily **unstructured data** in the form of leaf images.
 - Feedback loop where farmers or experts can mark wrong predictions
 - Model will be retrained periodically with new correctly labeled images
 - Threshold-based system: High confidence predictions shown directly, low confidence sent for expert review
+
+
+## Task 7: Responsible AI Considerations
+
+### Possible Risks and Mitigations
+
+- **Bias in Data**:  
+  The dataset may have more images of certain crops or diseases common in specific regions. This can lead to biased predictions.  
+  *Mitigation*: Use diverse datasets from different regions and climates, and apply data augmentation.
+
+- **Incorrect Predictions**:  
+  Wrong disease prediction can lead to incorrect treatment, causing further crop loss or unnecessary pesticide use.  
+  *Mitigation*: Implement confidence thresholds — low confidence predictions will be sent for expert review.
+
+- **Privacy Concerns**:  
+  If farmers upload images from their fields, there could be concerns about location data or farm information.  
+  *Mitigation*: Process images on-device (using MobileNet) and avoid storing sensitive farm data on cloud servers without consent.
+
+- **Over-reliance on AI**:  
+  Farmers might stop using their traditional knowledge and completely depend on the app.  
+  *Mitigation*: Design the system as a “decision support tool” rather than a replacement for farmer expertise. Always provide suggestions, not final commands.
+
+- **Impact on Users**:  
+  Small and illiterate farmers may find the technology difficult to use.  
+  *Mitigation*: Build a simple, voice-enabled interface in local languages (Hindi + regional languages) with minimal text.
+
+- **Need for Human Oversight**:  
+  AI should not be the sole decision maker in critical farming decisions.  
+  *Mitigation*: Always keep agricultural experts in the loop for model validation and final high-stakes decisions.
