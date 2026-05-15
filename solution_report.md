@@ -161,3 +161,36 @@ This is primarily **unstructured data** in the form of leaf images.
 - **Need for Human Oversight**:  
   AI should not be the sole decision maker in critical farming decisions.  
   *Mitigation*: Always keep agricultural experts in the loop for model validation and final high-stakes decisions.
+
+
+
+## Task 8: Final Solution Summary
+
+### Problem
+Small and marginal farmers suffer heavy crop losses every year due to delayed detection of plant diseases. Traditional manual inspection is slow, unreliable, and expert help is not always available.
+
+### Proposed AI Solution
+Develop a mobile app that allows farmers to click a photo of a diseased leaf. The app will instantly detect the disease using AI and suggest appropriate remedies. The solution is designed to be simple, voice-supported, and work in local languages.
+
+### Required Data
+- Large collection of leaf images (PlantVillage dataset + real farm images)
+- Multi-class labeled data (Healthy + various disease types)
+- Images from different crops, lighting conditions, and regions
+
+### Model Recommendation
+**Convolutional Neural Network (CNN)** with Transfer Learning (MobileNetV2 or ResNet50).  
+MobileNetV2 is chosen because it is lightweight and can run efficiently on mobile phones.
+
+### Expected Business Impact
+- Early disease detection can reduce crop loss by 30-50%
+- Decrease in unnecessary pesticide usage → lower cost and better environment
+- Increased farmer income and food security
+- Scalable solution that can help millions of farmers across India
+
+### Risks and Mitigation Plan
+- **Risk of wrong prediction** → Low confidence predictions will be referred to agricultural experts
+- **Bias in model** → Use diverse datasets from multiple regions
+- **Usability for small farmers** → Simple UI with voice commands and regional language support
+- **Privacy** → On-device processing (no need to upload images to cloud)
+
+This AI solution aims to make advanced technology accessible and useful for small farmers in India.
