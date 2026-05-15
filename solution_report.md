@@ -106,3 +106,29 @@ This is primarily **unstructured data** in the form of leaf images.
   - Global Average Pooling
   - Dense layers for classification
   - Softmax output layer for multi-class disease prediction
+ 
+
+## Task 6: Evaluation Plan
+
+### Technical Metrics
+- **Accuracy, Precision, Recall, and F1-Score** (especially important due to class imbalance)
+- **Confusion Matrix** to understand which diseases are being confused
+- **AUC-ROC** score for multi-class classification
+
+### Business Metrics
+- **Crop Loss Reduction Percentage** (estimated savings for farmers)
+- **Early Detection Rate** (how many diseases detected in initial stage)
+- **Farmer Adoption Rate** and **User Satisfaction Score**
+- **Reduction in unnecessary pesticide usage** (cost + environmental benefit)
+
+### Possible Failure Cases
+- Model performs poorly on images taken in different lighting/weather conditions
+- Misclassification between visually similar diseases
+- Low confidence predictions on new unseen diseases
+- Poor performance on low-quality images captured by farmers
+
+### Human Review or Validation Process
+- Regular validation by agricultural experts on a sample of predictions
+- Feedback loop where farmers or experts can mark wrong predictions
+- Model will be retrained periodically with new correctly labeled images
+- Threshold-based system: High confidence predictions shown directly, low confidence sent for expert review
