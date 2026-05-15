@@ -46,3 +46,40 @@ This problem is best suited for **Image Classification** because:
 - Image Classification is the most suitable AI task when we need to assign a single label to an entire image.
 
 This task can be effectively solved using a **Convolutional Neural Network (CNN)**, which is excellent at learning visual patterns from images such as spots, discoloration, lesions, and texture changes on leaves.
+
+
+## Task 4: Data Requirement Plan
+
+### Type of data needed
+- **Unstructured data** (Images)
+
+### Structured or Unstructured data
+This is primarily **unstructured data** in the form of leaf images.
+
+### Input Features
+- RGB images of plant leaves (jpg/png format)
+- Image size: Preferably 224x224 or 256x256 pixels
+- Different angles and lighting conditions of leaves
+
+### Target Variable / Labels
+- Multi-class labels such as:
+  - Healthy
+  - Early Blight
+  - Late Blight
+  - Leaf Rust
+  - Powdery Mildew
+  - Bacterial Spot
+  - etc.
+
+### Data Collection Method
+- Public datasets like **PlantVillage** dataset (widely used for plant disease detection)
+- Images collected from real farms using smartphones
+- Collaboration with agricultural universities and Krishi Vigyan Kendras (KVKs)
+- Data augmentation techniques (rotation, flipping, brightness adjustment) to increase dataset size
+
+### Data Quality Risks
+- Poor image quality due to low-resolution cameras used by farmers
+- Uneven lighting and background noise
+- Class imbalance (some diseases may have very few images)
+- Images taken in different weather conditions affecting model performance
+- Need for proper labeling by agricultural experts to avoid wrong labels
