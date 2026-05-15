@@ -30,3 +30,19 @@ Farmers usually rely on their own experience or consult local agricultural exper
 
 **Additional Challenge:**
 Most small farmers have low literacy levels and limited smartphone experience. Therefore, any AI solution must be extremely simple, preferably voice-based or with minimal text, and should work in local languages (Hindi/regional languages) to be truly usable.
+
+
+
+## Task 3: Identify the AI Task Type
+
+**Selected AI Task Type:** Image Classification
+
+**Explanation:**
+
+This problem is best suited for **Image Classification** because:
+
+- We are given images of plant leaves.
+- The goal is to classify each image into a specific category (e.g., Healthy, Early Blight, Late Blight, Rust, Powdery Mildew, etc.).
+- Image Classification is the most suitable AI task when we need to assign a single label to an entire image.
+
+This task can be effectively solved using a **Convolutional Neural Network (CNN)**, which is excellent at learning visual patterns from images such as spots, discoloration, lesions, and texture changes on leaves.
