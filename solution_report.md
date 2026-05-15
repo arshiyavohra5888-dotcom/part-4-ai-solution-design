@@ -83,3 +83,26 @@ This is primarily **unstructured data** in the form of leaf images.
 - Class imbalance (some diseases may have very few images)
 - Images taken in different weather conditions affecting model performance
 - Need for proper labeling by agricultural experts to avoid wrong labels
+
+
+
+
+## Task 5: Model Recommendation
+
+**Recommended Model:** Convolutional Neural Network (CNN)
+
+**Why CNN is appropriate for this problem:**
+
+- CNNs are specifically designed to work with image data. They can automatically learn important features like edges, textures, color patterns, and spots on leaves through convolutional layers.
+
+- In crop disease detection, the model needs to identify local patterns (lesions, discoloration, fungal growth) which CNNs are very good at capturing.
+
+- I recommend using a **pre-trained CNN model** such as **ResNet50** or **MobileNetV2** with Transfer Learning. 
+  - Transfer learning will help achieve good accuracy even with a relatively smaller dataset.
+  - MobileNetV2 is lightweight and can be deployed on mobile phones, which is very important for farmers.
+
+- Architecture will include:
+  - Pre-trained convolutional base
+  - Global Average Pooling
+  - Dense layers for classification
+  - Softmax output layer for multi-class disease prediction
